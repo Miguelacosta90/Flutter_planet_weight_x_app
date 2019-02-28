@@ -105,7 +105,8 @@ class HomeState extends State<Home> {
                   new Padding(padding: new EdgeInsets.all(15.6)),
                   //result Text
                   new Text(
-                    "$_formattedText lbs",
+                    _weightController.text.isEmpty ? "Please enter weight" : _formattedText + "lbs",
+                    //"$_formattedText lbs",
                     style: new TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
